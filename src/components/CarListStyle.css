@@ -1,0 +1,132 @@
+.car-list {
+  /* display: flex; */
+  /* flex-wrap: wrap;
+  justify-content: center; */
+  width: 90%;
+  margin: 0 auto;
+}
+  
+.cars{
+  width: 95%;
+}
+
+.car {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 350px;
+  text-align: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+  
+.car img {
+  margin: 0 auto;
+  max-width: 80%;
+  height: auto;
+}
+
+.class{
+  font-size: 28px;
+  color: #741906;
+  font-weight: 600;
+}
+
+.name{
+  font-size: 16px;
+}
+
+.description{
+  font-size: 12px;
+}
+
+.seats, .luggage{
+  display: flex;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  width: 35px;
+  justify-content: center;
+  background-color: #741906;
+  color: #fff;
+  border: none;
+  border-radius: 9%;
+  font-size: 20px;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+}
+
+.quantity-control span {
+  font-size: 22px;
+  font-weight: bold;
+}
+  
+@media screen and (max-width: 768px) {
+  .car-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .car {
+    max-width: 90%;
+  }
+}
+
+.style{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cars-title{
+  font-family: Lora;
+  margin: 5%;
+}
+
+.cars-big-title{
+  color: #EBEBEB;
+  font-size: 118px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cars-small-title{
+  color: #741906;
+  font-size: 48px;
+  margin-top: -70px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 658px){
+  .cars-big-title{
+    font-size: 74px;
+  }
+
+  .cars-small-title{
+    font-size: 38px;
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .car{
+    margin: 15px;
+  }
+  .cars{
+    margin-bottom: 20%;
+  }
+}

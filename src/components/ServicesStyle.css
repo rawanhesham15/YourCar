@@ -1,0 +1,85 @@
+.services-section {
+    background-color: #dfdfdf;
+    position: relative; 
+    height:fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.services::before {    
+      content: "";
+      background-image: url('../img/blueCar-removebg-preview.png');
+      background-size: cover;
+      background-position: center center;
+      position: absolute;
+      top: 200px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.1;
+}
+
+.services-title{
+    font-family: Lora;
+    padding: 5%;
+}
+
+.services-big-title{
+    color: #EBEBEB;
+    font-size: 118px;
+    font-weight: 600;
+}
+
+.services-small-title{
+    color: #12273D;
+    font-size: 48px;
+    margin-top: -12%;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+  
+.service {
+    width: 30%;
+    background-color: #DFDFDF;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+  
+@media screen and (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .service {
+    width: 100%;
+  }
+}
+  
+@media screen and (max-width: 674px){
+  .services-big-title{
+      font-size: 58px;
+  }
+
+  .services-title{
+      margin-top: 6%;
+      margin-bottom: 0;
+  }
+  .services-small-title{
+      font-size: 32px;
+  }
+}

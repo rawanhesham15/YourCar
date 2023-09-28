@@ -1,0 +1,84 @@
+.about{
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.about-text{
+    margin-top: 6%;
+    margin-left: 8%;
+    font-family: Lora;
+}
+
+.big-title{
+    color: #EBEBEB;
+    font-size: 118px;
+    font-weight: 600;
+}
+
+.small-title{
+    color: #741906;
+    font-size: 56px;
+    margin-top: -10%;
+    margin-left: 1%;
+    margin-bottom: 3%;
+}
+
+.about-info{
+    max-width: 84%;
+    font-size: 22px;
+}
+
+.brownCar{
+    margin-top: 30%;
+}
+
+@media screen and (max-width: 1212px){
+    .brownCar{
+        width: 400px;
+        margin-top: 45%;
+    }
+    .about-info{
+        font-size: 20px;
+    }
+    .big-title{
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .brownCar{
+        display: none;
+    }
+    .small-title{
+        margin-top: -65px;
+    }
+}
+
+@media screen and (max-width: 588px){
+    .big-title{
+        font-size: 70px;
+        text-align: center;
+        margin-left: -10%;
+    }
+
+    .small-title{
+        margin-top: -50px;
+        text-align: center;
+        margin-left: -20px;
+    }
+
+    .about-info{
+        margin-left: -4%;
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .big-title{
+        font-size: 55px;
+    }
+
+    .small-title{
+        font-size: 38px;
+    }
+}

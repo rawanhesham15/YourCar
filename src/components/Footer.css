@@ -1,0 +1,143 @@
+.footer{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    padding-left: 50px;
+}
+
+.yourCar{
+    max-width: 30%;
+}
+
+.yourCar h2{
+    color: #741906;
+    font-family: Lora;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+
+.yourCar p{
+    max-width: 90%;
+    font-family: Nunito Sans;
+}
+
+.NewsLetter{
+    display: flex;
+    flex-direction: column;
+}
+
+.NewsLetter h3{
+    text-align: center;
+    color: #741906;
+    font-weight: 600;
+    font-family: Lora;
+    margin-bottom: 4%;
+}
+
+.NewsLetter p{
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    
+}
+
+.NewsLetter .email{
+    display: flex;
+    justify-content: center;
+}
+
+.NewsLetter .social{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 15%;
+    /* margin-bottom: 5%; */
+}
+
+.NewsLetter .email input{
+    padding: 5px;
+    font-size: 18px;
+}
+
+.NewsLetter .email button{
+    background-color: #741906;
+    font-size: 18;
+    font-weight: 600;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+}
+
+.contact h3{
+    color: #741906;
+    font-weight: 600;
+    font-family: Lora;
+    margin-bottom: 4%;
+}
+
+.contact > div{
+    display: flex;
+}
+
+@media screen and (max-width: 741px){
+    .yourCar{
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer{
+        padding-left: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .yourCar p{
+        max-width: 100%;
+    }
+    .contact div{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 373px){
+    .email{
+        flex-direction: column;
+        width: 70%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .email button{
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 8px;
+    }
+} 
+
+.line{
+    color: #741906;
+}
+
+.footer-line {
+    width: 90%;
+    height: 2px;
+    background-color: #741906;
+    margin-left: -5%;
+}
+  
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+  
+div svg{
+    cursor: pointer;
+}

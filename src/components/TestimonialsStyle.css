@@ -1,0 +1,117 @@
+.testimonials-section{
+    height: 100vh;
+    background-color: #12273D;
+    height: fit-content;
+}
+
+.testimonials-title{
+    padding-bottom: 20px;
+}
+
+.testimonials-big-title{
+    color: #EBEBEB;
+    font-size: 100px;
+    font-weight: 600;
+    opacity: 0.05;
+    font-family: Lora;
+    text-align: center;
+    padding-top: 80px
+}
+
+.testimonials-small-title{
+    color: white;
+    font-size: 48px;
+    font-family: Lora;
+    text-align: center;
+    margin-top: -5%;
+}
+
+.testimonial-slider {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+  
+.testimonial {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    font-family: Nunito Sans;
+    padding: 5%;
+    padding-bottom: 3%;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-style: italic;
+    height: 370px
+}
+  
+.testimonial.active {
+    display: block;
+}
+  
+.testimonial-discription {
+    font-size: 20px;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 10%;
+}
+  
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.circle.active {
+    background-color: #EBD8B8;
+}
+  
+@media screen and (max-width: 866px){
+    .testimonials-big-title{
+        font-size: 60px;
+    }
+    .testimonials-small-title{
+        margin-top: -50px;
+    }
+    .testimonial{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 509px){
+    .testimonials-big-title{
+        padding-top: 40px;
+        font-size: 40px;
+    }
+    .testimonials-small-title{
+        margin-top: -35px;
+        font-size: 32px;
+    }
+    .testimonial{
+        width: 90%;
+    }
+    .circle-container{
+        padding-bottom: 10%;
+    }
+    .testimonial-discription{
+        font-size: 18px;
+    }
+}
+
+.testimonial svg{
+    width: 100px;
+}
